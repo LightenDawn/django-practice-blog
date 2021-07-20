@@ -1,0 +1,64 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block page_title %} My blog {% endblock %} 
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+<header id="main-navigation">
+  <h1><a href="">Ray's Blog</a></h1>
+  <nav>
+    <a href="">All posts</a>
+  </nav>
+</header>
+
+<section id="welcome">
+  <header>
+    <img src="" alt="Ray - The Author Of This Blog" />
+    <h2>Razer's Blog</h2>
+  </header>
+  <p>
+    Hi! I'm StarBurst Stream and I love to PK with the 76 floor monster, quick
+    and quicker!
+  </p>
+</section>
+
+<section id="latest-posts">
+  <h2>My latest posts</h2>
+
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="" alt="Mountain Hiking" />
+          <div class="post_content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              I can't imaging that you come to this floor, and your next enemy
+              is me the chain of the Cony! Defend my attack, loser. The divine
+              blaze!
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I DO</h2>
+  <p>
+    I love spending time with Busuna, she's the most shameless girl I've ever
+    met. I want to mess up with her all day and make her lying on the bed
+    with trembling.
+  </p>
+  <p>
+    I will let Busuna be my wife and will let her be the happiest girl in the
+    world. My Lil brother can't wait to see her and destroy her all day.
+  </p>
+</section>
+
+{% endblock %}
